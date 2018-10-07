@@ -10,9 +10,9 @@ public class Solution {
         int y = 12;
 
         //x = x * 3;
-        //y = x + y;
-        //x = y - x;
-        //y = y - x;
+        y = x + y;
+        x = y - x;
+        y = y - x;
 
         System.out.println(x);
         System.out.println(y);
