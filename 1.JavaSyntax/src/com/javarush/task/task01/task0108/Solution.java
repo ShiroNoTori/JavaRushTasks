@@ -8,8 +8,8 @@ public class Solution {
     public static void main(String[] args) {
         String s = "23";
         int a = 3, b = 2;
-        //String four = "четыре";
-        //String three = "3";
+        String four = "четыре";
+        String three = "3";
 
         //System.out.print("два");
         //System.out.print(" плюс ");
