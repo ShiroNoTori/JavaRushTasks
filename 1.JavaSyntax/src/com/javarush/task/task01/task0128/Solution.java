@@ -6,7 +6,8 @@ package com.javarush.task.task01.task0128;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        int a = 2;
+        sum(a, a);
     }
 
     public static void sum(int a, int b) {
