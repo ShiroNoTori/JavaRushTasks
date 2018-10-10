@@ -10,11 +10,11 @@ public class Solution {
 //        System.out.println("New Year");
 //        System.out.println("Happy New");
 //        System.out.println("Year");
-//        System.out.print("Happy New");
+        System.out.print("Happy New");
 //        System.out.println("Year");
 //        System.out.println(s);
 //        System.out.print("Happy New!");
-//        System.out.print(" ");
-//        System.out.println("Year");
+        System.out.print(" ");
+        System.out.println("Year");
     }
 }
