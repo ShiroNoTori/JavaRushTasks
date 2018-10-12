@@ -10,8 +10,7 @@ public class Solution {
     }
 
     public static double convertCelsiumToFahrenheit(int celsium) {
-        //напишите тут ваш код
 
-        return 0;
+        return celsium * 9d/5d + 32;
     }
 }
