@@ -11,8 +11,9 @@ public class Solution {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
 
-        String name = sc.nextLine();
         int years = sc.nextInt();
+        String name = sc.next();
+
 
         System.out.print(name + " захватит мир через " + years + " лет. Му-ха-ха!");
     }
