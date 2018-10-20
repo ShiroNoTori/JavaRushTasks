@@ -10,6 +10,11 @@ public class Solution {
     }
 
     public static int sumDigitsInNumber(int number) {
-        //напишите тут ваш код
+        int summ = 0;
+        String s = Integer.toString(number);
+        for(int i = 0; i < s.length(); i++){
+            summ += Character.getNumericValue(s.charAt(i));
+        }
+        return summ;
     }
 }
