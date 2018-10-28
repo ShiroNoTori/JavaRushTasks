@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        
+
         int counter = 0;
         float summ = 0;
         int n;
