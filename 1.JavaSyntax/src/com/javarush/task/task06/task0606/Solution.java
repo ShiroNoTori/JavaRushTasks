@@ -1,6 +1,7 @@
 package com.javarush.task.task06.task0606;
 
 import java.io.*;
+import java.util.Scanner;
 
 /* 
 Чётные и нечётные циферки
@@ -8,10 +9,27 @@ import java.io.*;
 
 public class Solution {
 
-    public static int even;
-    public static int odd;
+    public static int even = 0;
+    public static int odd = 0;
 
     public static void main(String[] args) throws IOException {
-        //напишите тут ваш код
+
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        boolean isOff = false;
+
+        while (!isOff){
+
+            if (n < 1) isOff = true;
+            else {
+                if ((n % 10) % 2 == 0) even++;
+                else odd++;
+                n /= 10;
+            }
+        }
+
+        System.out.println("Even: " + even + " Odd: " + odd);
     }
 }
