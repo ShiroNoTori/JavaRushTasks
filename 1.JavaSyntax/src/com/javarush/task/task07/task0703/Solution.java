@@ -9,6 +9,19 @@ import java.io.InputStreamReader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String[] strArr = new String[10];
+        int[] intArr = new int[10];
+
+        for (int i = 0; i < 10; i++){
+            strArr[i] = reader.readLine();
+            intArr[i] = strArr[i].length();
+        }
+
+        for (int i = 0; i < 10; i++){
+            System.out.println(intArr[i]);
+        }
+
     }
 }
