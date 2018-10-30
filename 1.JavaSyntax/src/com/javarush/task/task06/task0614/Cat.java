@@ -7,17 +7,25 @@ import java.util.ArrayList;
 */
 
 public class Cat {
-    //напишите тут ваш код
+    private static ArrayList<Cat> cats;
+
 
     public Cat() {
+        cats.add(this);
     }
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
+        Cat cat3 = new Cat();
+
         printCats();
     }
 
     public static void printCats() {
-        //напишите тут ваш код
+        for (int i = 0; i < cats.size(); i++){
+            System.out.println(cats.get(i));
+        }
     }
 }
