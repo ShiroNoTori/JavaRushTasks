@@ -9,7 +9,17 @@ import java.io.InputStreamReader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int[] arr = new int[10];
+
+        for (int i = 0; i < 10; i++){
+            arr[i] = Integer.parseInt(reader.readLine());
+        }
+
+        for (int i = 1; i <= 10; i++){
+            System.out.println(arr[arr.length - i]);
+        }
     }
 }
 
