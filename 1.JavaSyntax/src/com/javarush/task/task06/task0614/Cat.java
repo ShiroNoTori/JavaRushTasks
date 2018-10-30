@@ -7,19 +7,17 @@ import java.util.ArrayList;
 */
 
 public class Cat {
-    private static ArrayList<Cat> cats;
-
+    public static ArrayList<Cat> cats = new ArrayList<Cat>();
 
     public Cat() {
-        cats.add(this);
+        //Cat.cats.add(this);
     }
 
     public static void main(String[] args) {
 
-        Cat cat1 = new Cat();
-        Cat cat2 = new Cat();
-        Cat cat3 = new Cat();
-
+        for (int i = 0; i < 10; i++){
+            Cat.cats.add(new Cat());
+        }
         printCats();
     }
 
