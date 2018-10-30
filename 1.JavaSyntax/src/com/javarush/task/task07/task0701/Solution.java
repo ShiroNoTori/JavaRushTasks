@@ -16,12 +16,24 @@ public class Solution {
     }
 
     public static int[] initializeArray() throws IOException {
-        // создай и заполни массив
-        return null;
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int[] arr = new int[20];
+        for (int i = 0; i < 20; i++){
+            arr[i] = Integer.parseInt(reader.readLine());
+        }
+        return arr;
     }
 
     public static int max(int[] array) {
-        // найди максимальное значение
-        return 0;
+
+        int max = array[0];
+
+        for (int i = 0; i < 20; i++){
+            if (array[i] > max)
+                max = array[i];
+        }
+        return max;
     }
 }
