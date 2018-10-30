@@ -6,15 +6,21 @@ package com.javarush.task.task06.task0611;
 
 public class StringHelper {
     public static String multiply(String s) {
-        String result = "";
-        //напишите тут ваш код
-        return result;
+        //String result = "";
+        StringBuilder result = new StringBuilder();
+        for(int i = 0; i < 5; i++){
+            result.append(s);
+        }
+        return result.toString();
     }
 
     public static String multiply(String s, int count) {
-        String result = "";
-        //напишите тут ваш код
-        return result;
+        //String result = "";
+        StringBuilder result = new StringBuilder();
+        for(int i = 0; i < count; i++){
+            result.append(s);
+        }
+        return result.toString();
     }
 
     public static void main(String[] args) {
