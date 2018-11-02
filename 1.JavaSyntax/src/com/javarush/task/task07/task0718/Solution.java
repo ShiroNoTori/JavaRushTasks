@@ -10,7 +10,25 @@ import java.util.ArrayList;
 */
 public class Solution {
     public static void main(String[] args) throws IOException {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        ArrayList<String> list = new ArrayList<String>();
+
+        for (int i = 0; i < 10; i++){
+            list.add(reader.readLine());
+        }
+
+        int maxlength = list.get(0).length();
+
+        for (int i = 1; i < list.size(); i++){
+
+            int currentLength = list.get(i).length();
+
+            if (currentLength <= maxlength){
+                System.out.println(i);
+                return;
+            } else maxlength = currentLength;
+        }
     }
 }
 
