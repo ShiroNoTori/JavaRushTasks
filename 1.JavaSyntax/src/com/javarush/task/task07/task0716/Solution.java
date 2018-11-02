@@ -39,7 +39,7 @@ public class Solution {
             }
 
             if (hasL && !hasP){
-                list.add(i+1, currentStr);
+                list.add(i +1, currentStr);
                 i++;
             }
             else if (hasP && !hasL){

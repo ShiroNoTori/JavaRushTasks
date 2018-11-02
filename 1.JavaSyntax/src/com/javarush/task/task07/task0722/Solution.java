@@ -13,6 +13,20 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        //напишите тут ваш код
+        ArrayList<String> list = new ArrayList<>();
+
+        boolean isEnded = false;
+
+        while (!isEnded){
+            String temp = reader.readLine();
+
+            if (temp.equals("end")){
+                for (int i = 0; i < list.size(); i++){
+                    System.out.println(list.get(i));
+                }
+                isEnded = true;
+            }
+            else list.add(temp);
+        }
     }
 }
