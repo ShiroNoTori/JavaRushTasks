@@ -16,12 +16,13 @@ public class Solution {
     }
 
     public static long getInsertTimeInMs(List list) {
-        // напишите тут ваш код
+        Date date1 = new Date();
 
         insert10000(list);
 
-        // напишите тут ваш код
+        Date date2 = new Date();
 
+        return (date2.getTime() - date1.getTime());
     }
 
     public static void insert10000(List list) {
