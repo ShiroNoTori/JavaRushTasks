@@ -23,12 +23,11 @@ public class Solution {
     }
 
     public static long getGetTimeInMs(List list) {
-        // напишите тут ваш код
 
+        Date date1 = new Date();
         get10000(list);
-
-        // напишите тут ваш код
-
+        Date date2 = new Date();
+        return (date2.getTime() - date1.getTime());
     }
 
     public static void get10000(List list) {
