@@ -1,7 +1,12 @@
 package com.javarush.task.task08.task0827;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
+import java.util.zip.DataFormatException;
 
 /* 
 Работа с датой
@@ -13,15 +18,13 @@ public class Solution {
     }
 
     public static boolean isDateOdd(String date) {
-        Date date1 = new Date(date);
-        Date date2 = new Date();
+        DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+                .parseCaseInsensitive()
+                .appendPattern("MMMM d yyyy")
+                .toFormatter(Locale.ENGLISH);
 
-        date2.setTime(-10800000);           //разница в 3 часа по МСК
+        int dayOfYear = LocalDate.parse(date, formatter).getDayOfYear();
 
-        date2.setYear(date1.getYear());
-
-        long nOfDays = (date1.getTime() - date2.getTime())/86_400_000;
-
-        return nOfDays%2 != 0;
+        return dayOfYear % 2 == 1;
     }
 }
