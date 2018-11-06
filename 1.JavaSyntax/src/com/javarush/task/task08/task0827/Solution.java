@@ -15,7 +15,7 @@ public class Solution {
     public static boolean isDateOdd(String date) {
         Date date1 = new Date(date);
         Date date2 = new Date();
-        
+
         date2.setTime(-10800000);           //разница в 3 часа по МСК
 
         date2.setYear(date1.getYear());
