@@ -14,9 +14,13 @@ public class Solution {
     }
 
     public static Map<String, String> createPeopleList() {
-        //напишите тут ваш код
+        HashMap<String, String> map = new HashMap<String, String>();
 
-        return null;
+        for (int i = 0; i < 10; i++){
+            map.put(Integer.toString(i/3), Integer.toString(i/3));
+        }
+
+        return map;
     }
 
     public static void printPeopleList(Map<String, String> map) {
