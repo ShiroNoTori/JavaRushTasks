@@ -11,7 +11,7 @@ public class Solution {
     public static void main(String[] args) throws Exception {
         try {
             method1();
-        } catch (FileNotFoundException e){} 
+        } catch (FileNotFoundException e){}
         catch (NullPointerException e){}
     }
 
