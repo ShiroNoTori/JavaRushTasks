@@ -11,12 +11,28 @@ import java.nio.file.FileSystemException;
 public class Solution {
     public static StatelessBean BEAN = new StatelessBean();
 
-    public static void main(String[] args) {
-        handleExceptions();
+    public static void main(String[] args) throws FileSystemException{
+        try {
+            handleExceptions();
+        } catch (CharConversionException e){
+            BEAN.log(e);
+        } catch (IOException e){
+            BEAN.log(e);
+        }
+
     }
 
-    public static void handleExceptions() {
-        BEAN.methodThrowExceptions();
+    public static void handleExceptions() throws CharConversionException, FileSystemException, IOException {
+        try{
+            BEAN.methodThrowExceptions();
+        } catch (FileSystemException e){
+            BEAN.log(e);
+            throw e;
+        } catch (CharConversionException e){
+            BEAN.log(e);
+        } catch (IOException e){
+            BEAN.log(e);
+        }
     }
 
     public static class StatelessBean {
