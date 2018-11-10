@@ -14,9 +14,18 @@ public class Solution {
     }
 
     public static void handleExceptions(Solution obj) {
-        obj.method1();
-        obj.method2();
-        obj.method3();
+        try {
+            obj.method1();
+            obj.method2();
+            obj.method3();
+        } catch (RemoteException e){
+            System.out.println(e);
+        } catch (NoSuchFieldException e){
+            System.out.println(e);
+        } catch (IOException e){
+            System.out.println(e);
+        }
+
     }
 
     public void method1() throws IOException {
