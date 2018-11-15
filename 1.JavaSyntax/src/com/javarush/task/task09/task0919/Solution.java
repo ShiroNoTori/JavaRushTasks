@@ -7,6 +7,16 @@ package com.javarush.task.task09.task0919;
 public class Solution {
 
     public static void main(String[] args) {
-        divisionByZero();
+        try {
+            divisionByZero();
+        } catch (ArithmeticException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static void divisionByZero() {
+        int a = 5;
+        System.out.println(a /= 0);
     }
 }
