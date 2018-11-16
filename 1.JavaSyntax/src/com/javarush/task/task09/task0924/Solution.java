@@ -14,7 +14,12 @@ public class Solution {
     public static Wolf wolf = new Wolf();
 
     public static void main(String[] args) {
-        // напишите тут ваш код
+
+        wolf.eaten.add(grandmother);
+        wolf.eaten.add(hood);
+
+        woodman.killed.add(wolf);
+
     }
 
     // Красная шапочка
