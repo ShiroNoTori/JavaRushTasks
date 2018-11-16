@@ -13,7 +13,20 @@ public class Solution {
     }
 
     public static ArrayList<int[]> createList() {
-        //напишите тут ваш код
+        ArrayList<int[]> list = new ArrayList<int[]>();
+        int[] a = {1, 2, 3, 4, 5};
+        int[] b = {1, 2};
+        int[] c = {1, 2, 3, 4};
+        int[] d = {1, 2, 3, 4, 5, 6, 7};
+        int[] e = {};
+
+        list.add(a);
+        list.add(b);
+        list.add(c);
+        list.add(d);
+        list.add(e);
+
+        return list;
     }
 
     public static void printList(ArrayList<int[]> list) {
